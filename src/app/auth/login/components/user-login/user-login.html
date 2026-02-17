@@ -1,0 +1,238 @@
+<div class="auth-container">
+        <div class="auth-wrapper">
+            <!-- Left Side - Form Section -->
+            <div class="auth-form-section">
+                <!-- Login Page -->
+                <div class="auth-page active" id="loginPage">
+                    <div class="logo-section">
+                        <div class="logo-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h2>MediStock</h2>
+                            <p>Medicine Inventory Management</p>
+                        </div>
+                    </div>
+
+                    <h3 class="auth-title">Welcome Back!</h3>
+                    <p class="auth-subtitle">Login to manage your pharmacy inventory</p>
+
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <div class="input-icon">
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <div class="input-icon">
+                                <input type="password" class="form-control" placeholder="Enter your password" required>
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+
+                        <div class="forgot-link">
+                            <a href="#" onclick="showPage('forgotPage'); return false;">Forgot Password?</a>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="rememberMe">
+                            <label for="rememberMe">Remember me</label>
+                        </div>
+
+                        <button type="submit" class="btn-primary-custom">
+                            <i class="fas fa-sign-in-alt"></i> Login
+                        </button>
+                    </form>
+
+                    <div class="divider">
+                        <span>OR</span>
+                    </div>
+
+                    <div class="social-login">
+                        <button class="social-btn">
+                            <i class="fab fa-google"></i> Google
+                        </button>
+                        <button class="social-btn">
+                            <i class="fab fa-microsoft"></i> Microsoft
+                        </button>
+                    </div>
+
+                    <div class="switch-form">
+                        Don't have an account? <a href="#" onclick="showPage('registerPage'); return false;">Register Now</a>
+                    </div>
+                </div>
+
+                <!-- Register Page -->
+                <div class="auth-page" id="registerPage">
+                    <div class="logo-section">
+                        <div class="logo-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h2>MediStock</h2>
+                            <p>Medicine Inventory Management</p>
+                        </div>
+                    </div>
+
+                    <h3 class="auth-title">Create Account</h3>
+                    <p class="auth-subtitle">Start managing your pharmacy inventory today</p>
+
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Full Name</label>
+                            <div class="input-icon">
+                                <input type="text" class="form-control" placeholder="Enter your full name" required>
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <div class="input-icon">
+                                <input type="email" class="form-control" placeholder="Enter your email" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Phone Number</label>
+                            <div class="input-icon">
+                                <input type="tel" class="form-control" placeholder="Enter your phone number" required>
+                                <i class="fas fa-phone"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Password</label>
+                            <div class="input-icon">
+                                <input type="password" class="form-control" placeholder="Create a password" required>
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Confirm Password</label>
+                            <div class="input-icon">
+                                <input type="password" class="form-control" placeholder="Confirm your password" required>
+                                <i class="fas fa-lock"></i>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="agreeTerms" required>
+                            <label for="agreeTerms">I agree to Terms & Conditions</label>
+                        </div>
+
+                        <button type="submit" class="btn-primary-custom">
+                            <i class="fas fa-user-plus"></i> Create Account
+                        </button>
+                    </form>
+
+                    <div class="switch-form">
+                        Already have an account? <a href="#" onclick="showPage('loginPage'); return false;">Login</a>
+                    </div>
+                </div>
+
+                <!-- Forgot Password Page -->
+                <div class="auth-page" id="forgotPage">
+                    <div class="logo-section">
+                        <div class="logo-icon">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <div class="logo-text">
+                            <h2>MediStock</h2>
+                            <p>Medicine Inventory Management</p>
+                        </div>
+                    </div>
+
+                    <h3 class="auth-title">Reset Password</h3>
+                    <p class="auth-subtitle">Enter your email to receive reset instructions</p>
+
+                    <form>
+                        <div class="form-group">
+                            <label class="form-label">Email Address</label>
+                            <div class="input-icon">
+                                <input type="email" class="form-control" placeholder="Enter your registered email" required>
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary-custom">
+                            <i class="fas fa-paper-plane"></i> Send Reset Link
+                        </button>
+                    </form>
+
+                    <div class="back-to-login">
+                        <a href="#" onclick="showPage('loginPage'); return false;">
+                            <i class="fas fa-arrow-left"></i> Back to Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Info Section -->
+            <div class="auth-info-section">
+                <div class="info-content">
+                    <div class="info-title">
+                        Smart Medicine Inventory Management
+                    </div>
+                    <div class="info-description">
+                        Streamline your pharmacy operations with our comprehensive stock management system. Track inventory, manage sales, and optimize your medicine supply chain effortlessly.
+                    </div>
+
+                    <ul class="features-list">
+                        <li>
+                            <i class="fas fa-check-circle"></i>
+                            <span>Real-time Stock Tracking & Alerts</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line"></i>
+                            <span>Sales Analytics & Reports</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>Expiry Date Management</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-users"></i>
+                            <span>Multi-user Access Control</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile & Cloud Access</span>
+                        </li>
+                    </ul>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">Active Pharmacies</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">99.9%</div>
+                            <div class="stat-label">Uptime Guaranteed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Customer Support</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Data Security</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+    </div>
+
+
+    <div>
+ <div>
+  
