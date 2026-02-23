@@ -1,22 +1,25 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-user-login',
   standalone: true,
-  imports: [FormsModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './user-login.html',
   styleUrls: ['./user-login.css']
 })
 export class UserLogin {
 
-  username: string = '';
+  email: string = '';
   password: string = '';
 
-  login(): void {
-    console.log('Username:', this.username);
-    console.log('Password:', this.password);
-    alert('Login clicked');
+  onLogin() {
+    if (this.email && this.password) {
+      alert('Login Successful');
+    } else {
+      alert('Please fill all fields');
+    }
   }
 
 }

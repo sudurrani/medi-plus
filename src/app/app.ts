@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { UserLogin } from './auth/login/components/user-login/user-login';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [UserLogin],   // ✅ YAHAN IMPORT KARNA ZAROORI HAI
   templateUrl: './app.html'
 })
-export class App { }
+export class App {}
