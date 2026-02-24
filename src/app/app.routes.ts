@@ -3,6 +3,7 @@ import { UserRegistrationComponent } from './auth/register/components/user-regis
 import { UserLogin } from './auth/login/components/user-login/user-login';
 
 export const routes: Routes = [
-  { path: '', component:  UserLogin },
-  { path: 'register', component: UserRegistrationComponent }
+  { path: 'login', component: UserLogin },
+  { path: 'register', component: UserRegistrationComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }
 ];
