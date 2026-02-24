@@ -9,62 +9,9 @@
                     <div class="logo-icon">
                         <i class="fas fa-pills"></i>
                     </div>
-<<<<<<< HEAD
                     <div class="logo-text">
                         <h2>Medi Plus</h2>
                         <p>Medicine Inventory Management</p>
-=======
-
-                    <h3 class="auth-title">Welcome Back!</h3>
-                    <p class="auth-subtitle">Login to manage your pharmacy inventory</p>
-
-                    <form>
-                        <div class="form-group">
-                            <label class="form-label">Email Address</label>
-                            <div class="input-icon">
-                                <input type="email" class="form-control" placeholder="Enter your email" required>
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="form-label">Password</label>
-                            <div class="input-icon">
-                                <input type="password" class="form-control" placeholder="Enter your password" required>
-                                <i class="fas fa-lock"></i>
-                            </div>
-                        </div>
-
-                        <div class="forgot-link">
-                            <a href="forgot-password.html">Forgot Password?</a>
-                        </div>
-
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="rememberMe">
-                            <label for="rememberMe">Remember me</label>
-                        </div>
-
-                        <button type="submit" class="btn-primary-custom">
-                            <i class="fas fa-sign-in-alt"></i> Login
-                        </button>
-                    </form>
-
-                    <div class="divider" hidden>
-                        <span>OR</span>
-                    </div>
-
-                    <div class="social-login" hidden>
-                        <button class="social-btn">
-                            <i class="fab fa-google"></i> Google
-                        </button>
-                        <button class="social-btn">
-                            <i class="fab fa-microsoft"></i> Microsoft
-                        </button>
-                    </div>
-
-                    <div class="switch-form">
-                        Don't have an account? <a routerLink="/register">Register Now</a>
->>>>>>> ca9a3ab4796bfbbe138f55ae8a0eed2a3933a0bd
                     </div>
                 </div>
 
@@ -119,7 +66,7 @@
 
                 <div class="switch-form">
                     Don't have an account?
-                    <a href="#" (click)="onRegister($event)">
+                    <a [routerLink]="['/register']">
                         Register Now
                     </a>
                 </div>
